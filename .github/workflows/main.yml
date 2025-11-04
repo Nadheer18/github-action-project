@@ -27,4 +27,4 @@ jobs:
       run: mvn test
 
     - name: list target folder
-      run: ls-R target
+      run: ls -R target
