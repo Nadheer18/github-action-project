@@ -26,8 +26,11 @@ jobs:
     - name: Run Unit Tests
       run: mvn test
 
-    - name: list target folder
-      run: ls -R target
+    - name: Show build info
+      run: 
+        echo "Listing target folder contents:"
+        ls -R target
+        echo "Build completed ✅"
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
